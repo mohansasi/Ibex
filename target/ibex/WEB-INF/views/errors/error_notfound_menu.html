@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"  xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4/">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- Header fragment starts here -->
+<head th:replace="/fragments/header-includes :: headerFragment"></head>
+<!-- Header fragment ends here -->
+	<body id="quiskResponsive">
+	<!-- container section starts here -->
+		<div class="ah-prof-container-new min-height" id="main">
+	<!-- navigation section starts here -->
+		<nav th:replace="/fragments/header-menu :: navFragment"></nav>
+		<div class="row">
+			<div class="page-error-container">
+				<h1 th:text="#{not.found.errormessage}" class="page-error-msg"></h1>
+			</div>
+		</div>
+	</div>
+	<!-- Footer part starts here -->
+	<div th:replace="fragments/footer :: footer"></div>
+	<script src="../../../resources/js/disabled-features.js" th:src="@{/resources/js/disabled-features.js}"></script>
+  </body>
+</html>

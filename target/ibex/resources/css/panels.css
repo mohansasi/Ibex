@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.h2,
+{
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.panel-group {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    width: 100%;
+}/* CSS Document */
+

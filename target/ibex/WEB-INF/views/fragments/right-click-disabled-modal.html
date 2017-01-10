@@ -1,0 +1,24 @@
+<!-- Modal for disabling mouse click pop-up starts here -->
+			<div th:fragment="modalFragment" id="modalFragment" >
+			   <div  aria-hidden="true" style="display: none;" class="modal fade" id="disableMouseClickModal"  >
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 id="myModalLabel" class="modal-title"></h4>
+							</div>
+							<div class="modal-body">
+								<div>
+									<span>Mouse Right Click Disabled</span>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<div>
+									<button data-dismiss="modal" class="btn btn-primary disableRightClickModalClose" type="button">OK</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-backdrop fade in" style="display: none;" id="disableMouseClickOverlay"></div>
+		    </div>
+<!-- Modal for disabling mouse click pop-up ends here -->

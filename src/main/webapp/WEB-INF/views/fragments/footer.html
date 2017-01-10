@@ -1,0 +1,15 @@
+
+
+<!--/*  Multiple fragments may be defined in one file
+Footer section for Quisk starts here */-->
+<div th:fragment="footer" >
+	<footer role="contentinfo" class="footer clearfix">
+		<p>&copy; <span th:text="${session.footerYear}"></span> Quisk, Inc. All rights reserved</p>
+	</footer>
+	 <script src="../../../resources/jquery-latest.min.js" th:src="@{/resources/js/jquery-latest.min.js}"></script>
+	 <script src="../../../resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script>
+	 <!-- used for implementing data grid in Account Holder search Form -->
+	 <script src="../../../resources/js/jquery.dataTables.min.js" th:src="@{/resources/js/jquery.dataTables.min.js}"></script>
+	 <script src="../../../resources/js/jquery-ui.min.js" th:src="@{/resources/js/jquery-ui.min.js}"></script>
+</div>
+

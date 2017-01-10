@@ -1,0 +1,274 @@
+/*
+ * Start Bootstrap - Landing Page (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 18px !important;
+    
+}
+
+body{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+40,c3d600+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 40%, #c3d600 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 40%,#c3d600 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 40%,#c3d600 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#c3d600',GradientType=0 ); /* IE6-9 */
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: #434350;
+}
+
+.topnav {
+    font-size: 14px; 
+}
+nav.navbar.navbar-default.navbar-fixed-top.topnav {
+    height: 80px;
+}
+.btn-default {
+    color: #434350;
+    background-color: #c3d600;
+    border-color: #434350;
+}
+ul.nav.navbar-nav.navbar-right.qnav {
+    color: #c3d600 !important;
+    text-transform: uppercase;
+}
+ul.nav.navbar-nav.navbar-right.qnav li a {
+    line-height: 54px;
+     color: #434350;
+}
+ul.nav.navbar-nav.navbar-right.qnav li a:hover {
+    color: #c3d600;
+}
+.intro-body {
+    padding: 50px 0px;
+    background: #c4ce82;
+    text-align: center;
+}
+
+
+
+.intro-header {
+    padding-top: 70px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 70px;
+    text-align: left;
+    color: #c3d600;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+
+
+@media(max-width:767px) {
+    
+.myButton{
+        padding: 12px 30px !important;
+}
+}
+
+
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+.page-content ul {
+    color: color: #434350 !important;
+    color: #777 !important;
+    line-height: 33px;
+    padding-top: 15px;
+}
+a.btn.btn-default.btn-lg.network {
+    margin-top: 50px;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    
+
+}
+
+
+footer {
+    padding: 50px 0;
+    background-color: #464748;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+
+.myButton {
+    -moz-box-shadow: -3px 5px 1px -12px #c4d600;
+    -webkit-box-shadow: -3px 5px 1px -12px #c4d600;
+    box-shadow: -3px 5px 1px -12px #c4d600;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c4d600), color-stop(1, #9fad03));
+    background: -moz-linear-gradient(top, #c4d600 5%, #9fad03 100%);
+    background: -webkit-linear-gradient(top, #c4d600 5%, #9fad03 100%);
+    background: -o-linear-gradient(top, #c4d600 5%, #9fad03 100%);
+    background: -ms-linear-gradient(top, #c4d600 5%, #9fad03 100%);
+    background: linear-gradient(to bottom, #c4d600 5%, #9fad03 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c4d600', endColorstr='#9fad03',GradientType=0);
+    background-color: #c4d600;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 6px;
+    border: 2px solid #9fad03;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 17px;
+    padding: 10px 40px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #2f6627;
+    width: 100%;
+}
+.myButton:hover, .myButton:active {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #9fad03), color-stop(1, #c4d600));
+    background:-moz-linear-gradient(top, #9fad03 5%, #c4d600 100%);
+    background:-webkit-linear-gradient(top, #9fad03 5%, #c4d600 100%);
+    background:-o-linear-gradient(top, #9fad03 5%, #c4d600 100%);
+    background:-ms-linear-gradient(top, #9fad03 5%, #c4d600 100%);
+    background:linear-gradient(to bottom, #9fad03 5%, #c4d600 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9fad03', endColorstr='#c4d600',GradientType=0);
+    background-color:#9fad03;
+        text-decoration: none;
+    color: #fff;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+     text-decoration: none;
+    color: #fff;
+}
+.quiskloginconent{
+    padding-top:12%;
+}
+.col-md-6.left {
+    border-right: dotted #58595b 1px;
+}
+.qusik-login-form {
+    max-width: 440px;
+    background: #fff;
+    padding: 0px 40px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    height: 330px;
+    border: solid thin #58595b;
+    -webkit-box-shadow: 3px 3px 7px 0px rgba(107,106,107,1);
+-moz-box-shadow: 3px 3px 7px 0px rgba(107,106,107,1);
+box-shadow: 3px 3px 7px 0px rgba(107,106,107,1);
+
+}
+.qusik-login-form h2 {
+    text-align: center;
+    font-size: 16px;
+    padding: 25px 0px 30px;
+    font-family: sans-serif;
+    margin: 0px;
+}
+.quisk img {
+    padding: 50px;
+}
+.loginform-inner {
+    border: solid thin rgba(88, 89, 91, 0.68);
+    border-radius: 6px;
+    padding-top:  20px;
+   margin-top: 10px;
+    margin-bottom: 20px;
+}
+.foter-text {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family: sans-serif;
+    padding:20px;
+}
+.foter-text a {
+    color: #58595b;
+    font-weight: bold;
+}
+.left-inner-addon {
+    position: relative;
+}
+.left-inner-addon input {
+    padding-left: 30px;    
+}
+.left-inner-addon i {
+    position: absolute;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+.loginform-inner .form-group i {
+        z-index: 9999999;
+    position: absolute;
+    padding-top: 2px;
+    padding-left: 15px;
+    color: #58595b;
+    font-weight: lighter;
+        opacity: 0.5;
+}
+.loginform-inner input {
+    line-height: 40px;
+    padding-left: 50px;
+    border: none;
+    outline: 0;
+    box-shadow: none !important;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+.thanksform-inner {
+    padding-top: 22%;
+    font-family: sans-serif;
+    margin-bottom: 25px;
+}
+.thanksform-inner span {
+    font-weight: bold;
+    line-height: 35px;
+}
+p#errorMessage {
+    position: absolute;
+    margin-top: -20px;
+    font-size: 14px;
+    color: rgba(230, 16, 16, 0.92);
+}

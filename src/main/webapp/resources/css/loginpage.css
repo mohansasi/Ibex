@@ -1,0 +1,1245 @@
+@charset "UTF-8";
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+@font-face {
+    font-family: "ppf-actions";
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Actions-v1.1.eot?#iefix-acnm6v") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Actions-v1.1.woff?-acnm6v&_=999999") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Actions-v1.1.ttf?-acnm6v&_=999999") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Actions-v1.1.svg?-acnm6v&_=999999#ppf-actions") format("svg");
+}
+@font-face {
+    font-family: "ppf-features";
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Features-v1.1.eot?#iefix-acnm6v") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Features-v1.1.woff?-acnm6v&_=999999") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Features-v1.1.ttf?-acnm6v&_=999999") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Features-v1.1.svg?-acnm6v&_=999999#ppf-features") format("svg");
+}
+@font-face {
+    font-family: "ppf-media";
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Media-v1.1.eot?#iefix-acnm6v&_=999999") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Media-v1.1.woff?-acnm6v&_=999999") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Media-v1.1.ttf?-acnm6v&_=999999") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Media-v1.1.svg?-acnm6v&_=999999#ppf-media") format("svg");
+}
+@font-face {
+    font-family: "ppf-misc";
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Misc-v1.1.eot?#iefix-acnm6v") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Misc-v1.1.woff?-acnm6v&_=999999") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Misc-v1.1.ttf?-acnm6v&_=999999") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Misc-v1.1.svg?-acnm6v&_=999999#ppf-misc") format("svg");
+}
+@font-face {
+    font-family: "ppf-utility";
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Utility-v1.1.eot?#iefix-acnm6v") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Utility-v1.1.woff?-acnm6v&_=999999") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Utility-v1.1.ttf?-acnm6v&_=999999") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Utility-v1.1.svg?-acnm6v&_=999999#ppf-utility") format("svg");
+}
+@font-face {
+    font-family: "ppf-web";
+    src: url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Web-v1.1.eot?#iefix-acnm6v") format("embedded-opentype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Web-v1.1.woff?-acnm6v&_=999999") format("woff"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Web-v1.1.ttf?-acnm6v&_=999999") format("truetype"), url("https://www.paypalobjects.com/webstatic/mktg/2014design/fonts/v1.1/PP-Web-v1.1.svg?-acnm6v&_=999999#ppf-web") format("svg");
+}
+.ppf {
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: none;
+}
+.lower-than-ie9 .ppf {
+    display: none;
+}
+.ppf.actions, .ppf.action {
+    font-family: ppf-actions,Helvetica Neue,Arial,sans-serif;
+}
+.ppf.features, .ppf.feature {
+    font-family: ppf-features,Helvetica Neue,Arial,sans-serif;
+}
+.ppf.media {
+    font-family: ppf-media,Helvetica Neue,Arial,sans-serif;
+}
+.ppf.misc {
+    font-family: ppf-misc,Helvetica Neue,Arial,sans-serif;
+}
+.ppf.utility {
+    font-family: ppf-utility,Helvetica Neue,Arial,sans-serif;
+}
+.ppf.web {
+    font-family: ppf-web,Helvetica Neue,Arial,sans-serif;
+}
+.main .headContainer {
+    margin-bottom: 10px;
+}
+.injectedUlLayout {
+    display: block !important;
+}
+@media all and (max-width: 767px) {
+* {
+}
+header.headContainer {
+    width: 100%;
+}
+}
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+@keyframes rotation {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+html {
+    background-color: #fff;
+    min-height: 100%;
+}
+body {
+    color: #2c2e2f;
+    font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+    font-size: 93.75%;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+}
+ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+p {
+    color: #000000;
+    font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+h1 {
+    color: #2c2e2f;
+    font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+    font-size: 1.86667em;
+    font-weight: 300;
+    margin: 0;
+}
+h2 {
+	color: #000000;
+	font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+img {
+    border: 0 none;
+}
+a, a:link, a:visited {
+    color: #009cde;
+    font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.2s ease-out 0s;
+}
+a:hover, a:focus {
+    color: #008ac5;
+    outline: 0 none;
+    text-decoration: underline;
+}
+.dusk, .dusk:link, .dusk:visited {
+    color: #0079ad;
+}
+header {
+    padding: 15px;
+}
+header .paypal-logo {
+    margin-left: 5%;
+}
+.no-js body {
+    display: block !important;
+}
+.nonjsAlert {
+    background-color: #ff9;
+    border-bottom: 1px solid #900;
+    border-top: 1px solid #900;
+    color: #900;
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+}
+.imageLink:focus {
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #666;
+}
+.accessAid {
+    border: 0 none !important;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px !important;
+    overflow: hidden;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+}
+.clearfix {
+}
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+.hide {
+    display: none;
+}
+.underlay {
+    background: none repeat scroll 0 0 #999;
+    content: "";
+    height: 100%;
+    left: 0;
+    margin: 0;
+    opacity: 0.6;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+* {
+    box-sizing: border-box;
+}
+.paypal-logo {
+    background: url("https://www.paypalobjects.com/images/shared/paypal-logo-129x32.svg") no-repeat scroll center top / 129px 32px transparent;
+    display: block;
+    height: 32px;
+    text-indent: -999em;
+    width: 129px;
+}
+.lower-than-ie9 .paypal-logo {
+    background: url("https://www.paypalobjects.com/images/shared/paypal-logo-129x32.png") no-repeat scroll center top transparent;
+}
+.modal-animate {
+    left: 50%;
+    margin-left: -50px;
+    min-height: 100px;
+    overflow: hidden;
+    position: absolute;
+    top: 24%;
+    width: 100px;
+    z-index: 17;
+}
+.rotate {
+    animation: 0.7s linear 0s normal none infinite running rotation;
+    border-color: #2180c0 rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2);
+    border-radius: 100%;
+    border-style: solid;
+    border-width: 8px;
+    content: "";
+    height: 46px;
+    left: 50%;
+    margin-left: -23px;
+    position: absolute;
+    top: 50%;
+    width: 46px;
+    z-index: 6;
+}
+.lower-than-ie9 .rotate, .lower-than-ie10 .rotate {
+    background: url("https://www.paypalobjects.com/webstatic/checkout/hermes/icon_loader_med.gif") no-repeat scroll center top transparent;
+    border-color: -moz-use-text-color;
+    border-style: none;
+    border-width: 0;
+}
+.lower-than-ie10 .rotate {
+    background-size: 100% auto;
+}
+.lower-than-ie9 .rotate {
+    height: 48px;
+    margin-left: -24px;
+    width: 48px;
+}
+.contentContainer {
+    background-color: #fff;
+    border-color: #cccccc;
+    border-radius: 5px;
+    border-style: groove;
+    margin: 65px auto 0;
+    padding: 1% 4%;
+    position: relative;
+    width: 460px;
+}
+.contentContainer .modal-overlay {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 16;
+}
+.contentContainer header {
+    padding: 0 0 35px;
+}
+.contentContainer header .paypal-logo {
+    margin: 0 auto;
+}
+.pwr-modal {
+    display: none;
+}
+.pwr-modal iframe {
+    border: 0 none;
+    min-height: 300px;
+    width: 100%;
+}
+.ui-dialog-titlebar div {
+    box-sizing: content-box;
+}
+.response500 {
+    text-align: center;
+}
+.response500 .headerText {
+    line-height: normal;
+}
+.left {
+    text-align: left;
+}
+.bold {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.largetext {
+    font-size: 30px;
+    margin-top: 0;
+}
+.countdown {
+    font-size: 38px;
+    margin-top: 0;
+}
+@media all and (max-width: 767px) {
+.contentContainer {
+    background-color: transparent;
+    margin-top: 0;
+    padding: 15px 15px 0;
+    width: 100%;
+}
+header {
+    padding-bottom: 15px;
+}
+header .paypal-logo {
+    margin-left: 0;
+}
+}
+.contentContainerSlim {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+a.button, a.button:link, a.button:visited, .button {
+    -moz-appearance: none;
+    background-color: #bed370;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    height: 44px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    transition: background-color 0.4s ease-out 0s;
+    width: 100%;
+}
+a.button:hover, a.button:link:hover, a.button:visited:hover, .button:hover, a.button:focus, a.button:link:focus, a.button:visited:focus, .button:focus {
+    background-color: #889d2b;
+    outline: 0 none;
+    text-decoration: underline;
+}
+a.button.active, a.button.active:link, a.button.active:visited, .button.active, a.button:active, a.button:link:active, a.button:visited:active, .button:active {
+    background: none repeat scroll 0 0 #00598e;
+}
+a.button.secondary, a.button.secondary:link, a.button.secondary:visited, .button.secondary {
+    background-color: #e1e7eb;
+    color: #2c2e2f;
+}
+a.button.secondary:hover, a.button.secondary:link:hover, a.button.secondary:visited:hover, .button.secondary:hover, a.button.secondary:focus, a.button.secondary:link:focus, a.button.secondary:visited:focus, .button.secondary:focus {
+    background-color: #d2dbe1;
+}
+a.button, a.button:link, a.button:visited {
+    padding-top: 14px;
+}
+.buttonLessAccessible:hover, .buttonLessAccessible:focus {
+    text-decoration: none;
+}
+:-moz-placeholder {
+    font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+}
+*::-moz-placeholder {
+    font-family: HelveticaNeue,"Helvetica Neue",HelveticaNeue-Light,"Helvetica Neue Light",Helvetica,Arial,sans-serif;
+}
+.fieldWrapper {
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+.errorMessage {
+    background: none repeat scroll 0 0 #c72f38;
+    border-radius: 5px;
+    color: #fff;
+    height: 0;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 1px;
+    transition: all 0.3s ease-out 0s;
+    width: 100%;
+    z-index: 1;
+}
+.errorMessage p {
+    color: #fff;
+    margin: 0;
+}
+.errorMessage.show {
+    border-radius: 0;
+    height: auto;
+    text-align: left;
+    top: 36px;
+}
+.clearInput {
+    background: none repeat scroll 0 0 #ccc;
+    border-radius: 18px;
+    direction: ltr;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 13px;
+    text-indent: -99999em;
+    top: 13px;
+    width: 18px;
+}
+.lower-than-ie10 .clearInput {
+    top: 31px;
+}
+.clearInput::before {
+    content: "X";
+    left: 4px;
+    position: absolute;
+    text-indent: 0;
+    top: 0;
+}
+.ie .clearInput::before {
+    top: 2px;
+}
+.clearInput:focus, .clearInput:hover {
+    background: none repeat scroll 0 0 #999;
+}
+.hasError .clearInput, .no-js .clearInput {
+    display: none;
+}
+.textInput {
+    margin: 0 0 15px;
+    position: relative;
+}
+.textInput.hasError input {
+    background-image: url("https://www.paypalobjects.com/webstatic/i/consumer/onboarding/sprite_form_2x.png");
+    background-position: right 10px top -409px;
+    background-repeat: no-repeat;
+    background-size: 25px auto;
+    border: 1px solid #c72f38;
+}
+.lower-than-ie9 .textInput.hasError input {
+    background-position: right -804px;
+}
+.textInput.hasError input:-moz-placeholder {
+    color: #c72f38;
+}
+.textInput.hasError input::-moz-placeholder {
+    color: #c72f38;
+}
+.textInput.hasError input:focus, .textInput.hasError input:active {
+    border: 1px solid #c72f38;
+}
+.textInput.hasError input:focus:-moz-placeholder, .textInput.hasError input:active:-moz-placeholder {
+    color: #9b989b;
+}
+.textInput.hasError input:focus::-moz-placeholder, .textInput.hasError input:active::-moz-placeholder {
+    color: #9b989b;
+}
+.textInput .fieldLabel {
+    border: 0 none;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.textInput input, .textInput textarea {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #000;
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    font-weight: 400;
+    height: 40px;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+.textInput input:focus, .textInput textarea:focus {
+    background-color: #fff;
+    border: 1px solid #009cde;
+    box-shadow: none;
+    outline: 0 none;
+}
+.textInput textarea {
+    height: 100%;
+    overflow: auto;
+    padding-right: 0;
+    padding-top: 12px;
+}
+.textInput input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]) {
+    background-clip: padding-box;
+    transition: border 0.2s ease-in-out 0s, background-color 0.2s ease-in-out 0s;
+}
+.textInput .tickmark {
+    background: url("sprite_form.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+@media not all, only screen and (min--moz-device-pixel-ratio: 2), not all, not all {
+.textInput .tickmark {
+    background: url("sprite_form_2x.png") no-repeat scroll 0 0 / 25px auto rgba(0, 0, 0, 0);
+}
+}
+.textInput .tickmark {
+    background-position: 0 69%;
+    cursor: pointer;
+    float: right;
+    height: 35px;
+    margin-top: 2px;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    width: 35px;
+    z-index: 3;
+}
+.js .lap .textInput, .js div.lap.textInput {
+    padding: 0;
+    position: relative;
+}
+.js .lap .textInput label, .js div.lap.textInput label {
+    color: #666;
+    cursor: text;
+    left: 12px;
+    position: absolute;
+    z-index: 1;
+}
+.js .lap .textInput label.focus, .js div.lap.textInput label.focus, .js div.lap.textInput label.focus span.optional, .js .lap .textInput label.focus span.optional {
+    color: #b3b3b3;
+}
+.js .lap .textInput.medium, .js div.lap.textInput.medium {
+    padding: 0;
+    position: relative;
+}
+.js .lap .textInput.medium label.focus, .js .formMedium div.lap.textInput.medium label.focus {
+    color: #b3b3b3;
+}
+.js .lap .textInput.medium label, .js div.lap.textInput.medium label {
+    color: #666;
+    left: 12px;
+    position: absolute;
+    z-index: 1;
+}
+.groupFields {
+    clear: both;
+}
+.groupFields .textInput {
+    float: left;
+    width: 48.9%;
+}
+.groupFields .textInput input {
+    width: 100%;
+}
+.groupFields .left, .groupFields .middle {
+    margin-right: 10px;
+}
+.groupFields .multi .left {
+    float: left;
+    width: 72.5%;
+}
+.groupFields .multi .right {
+    float: left;
+    width: 25%;
+}
+.groupFields .multi.equal .left, .groupFields .multi.equal .right {
+    width: 48.6%;
+}
+.groupFields .reverse .right {
+    width: 72.3%;
+}
+.groupFields .reverse .left {
+    width: 25%;
+}
+.groupFields .multiple .left {
+    float: left;
+    width: 48.8%;
+}
+.groupFields .multiple .right {
+    float: left;
+    width: 25%;
+}
+.groupFields .multiple .middle {
+    float: left;
+    width: 21.4%;
+}
+.groupFields .multiple.equal .left, .groupFields .multiple.equal .right, .groupFields .multiple.equal .middle {
+    width: 31.8%;
+}
+.groupFields .large {
+    width: 100%;
+}
+.groupReatedFields .left {
+    float: left;
+    width: 27%;
+}
+.groupReatedFields .right {
+    float: left;
+    width: 73%;
+}
+.groupReatedFields .selectDropdown {
+    border-bottom-right-radius: 0;
+    border-right: 0 none;
+    border-top-right-radius: 0;
+}
+.groupReatedFields .textInput input {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+@media all and (min-width: 768px) and (max-width: 1024px) {
+.groupFields .multi.equal .left, .groupFields .multi.equal .right {
+    width: 48.4%;
+}
+}
+@media all and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+.groupFields .multi.equal .left, .groupFields .multi.equal .right {
+    width: 48.2%;
+}
+}
+@media all and (max-width: 538px) {
+.groupFields .textInput, .groupFields .multi .textInput, .groupFields .multiple .textInput, .groupFields .selectDropdown, .groupFields .multi .selectDropdown, .groupFields .multiple .selectDropdown {
+    width: 100%;
+}
+}
+@media all and (max-width: 767px) {
+.groupFields .multi.equal .left, .groupFields .multi.equal .right {
+    width: 48.2%;
+}
+}
+.countryPhoneSelectWrapper {
+    border-right: 1px solid #aaa;
+    height: 40px;
+    position: absolute;
+    width: 90px;
+    z-index: 101;
+}
+.countryPhoneSelectWrapper .countryPhoneSelect {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    height: 44px;
+    opacity: 0;
+    position: relative;
+    width: 100px;
+    z-index: 1;
+}
+.countryPhoneSelectWrapper .countryPhoneSelectChoice {
+    border-radius: 5px;
+    display: table;
+    font-size: 12px;
+    height: 44px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.countryPhoneSelectWrapper .countryPhoneSelectChoice::after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #333;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: "";
+    height: 8px;
+    left: 62px;
+    margin: 8px 0 0 8px;
+    position: absolute;
+    top: 5px;
+    transform: rotate(135deg);
+    width: 8px;
+}
+.countryPhoneSelectWrapper .countryCode, .countryPhoneSelectWrapper .phoneCode {
+    display: table-cell;
+    vertical-align: middle;
+}
+.countryPhoneSelectWrapper .countryCode {
+    color: #fff;
+    font-weight: 700;
+    position: relative;
+    text-align: center;
+}
+.countryPhoneSelectWrapper .phoneCode {
+    padding-left: 4px;
+    width: 62%;
+}
+.countryPhoneSelectWrapper .countryCode::before {
+    background: none repeat scroll 0 0 #009cde;
+    border-radius: 5px;
+    content: "";
+    height: 22px;
+    left: 4px;
+    position: absolute;
+    top: 10px;
+    width: 80%;
+    z-index: -1;
+}
+.phoneInputWrapper input {
+    padding-left: 95px;
+}
+.icon {
+    background: none repeat scroll 0 center rgba(0, 0, 0, 0);
+    border: 0 none;
+    color: #009cde;
+    direction: ltr;
+    height: 37px;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    text-indent: -9999px;
+    top: 0;
+    width: 40px;
+}
+.icon.phone::before {
+    content: "l";
+    font-size: 50px;
+    position: absolute;
+    right: -7px;
+    text-indent: 0;
+    top: -5px;
+}
+.icon.email.hide {
+    display: none;
+}
+.icon.email::before {
+    content: "n";
+    font-size: 50px;
+    position: absolute;
+    right: -3px;
+    text-indent: 0;
+    top: -5px;
+}
+.hasError .icon {
+    display: none;
+}
+.notifications.animatable {
+    display: none;
+}
+.notifications .notification {
+    background: none no-repeat scroll 0 0 / 20px auto rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border-width: 1px;
+    font-size: 1em;
+    margin-top: 0;
+    padding: 15px 15px 15px 44px;
+    text-align: left;
+}
+.notifications .notification.notification-default {
+    background-color: #f7f9fa;
+    background-position: left 12px top -788px;
+    border-color: #afabae;
+}
+.lower-than-ie9 .notifications .notification.notification-default {
+    background-position: 1% 81.5%;
+}
+.notifications .notification.notification-critical {
+    background-position: left 12px;
+    color: #ff0000;
+    font-size: 12px;
+}
+.lower-than-ie9 .notifications .notification.notification-critical {
+    background-position: 1% 41%;
+}
+.notifications .notification.notification-help {
+    background-color: #f7fdff;
+    background-position: left 12px top -588px;
+    border-color: #009cde;
+}
+.lower-than-ie9 .notifications .notification.notification-help {
+    background-position: 1% 61%;
+}
+.notifications .notification.notification-success {
+    background-position: left 12px;
+    border-color: #1b9e1b;
+    color: #339933;
+    font-size: 12px;
+}
+.lower-than-ie9 .notifications .notification.notification-success {
+    background-position: 1% 0;
+}
+.notifications .notification.notification-warning {
+    background-color: #fffcf7;
+    background-position: left 12px top -188px;
+    border-color: #f8981f;
+}
+.lower-than-ie9 .notifications .notification.notification-warning {
+    background-position: 1% 20.5%;
+}
+.captcha-container {
+    margin: 0;
+    width: 100%;
+}
+.captcha-container .captcha-image {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    height: 85px;
+    margin: 0 0 5px;
+    text-align: center;
+}
+.captcha-container .captcha-image img {
+    border-radius: 4px;
+    height: 81px;
+    width: 100%;
+}
+.captcha-container .captcha-inputs .textInput.medium {
+    float: left;
+    width: 69%;
+}
+@media screen and (min-width: 440px) and (max-width: 590px) {
+.captcha-container .captcha-inputs .textInput.medium {
+    width: 78%;
+}
+}
+@media screen and (max-width: 440px) {
+.captcha-container .captcha-inputs .textInput.medium {
+    width: 82%;
+}
+}
+.captcha-container .captcha-inputs .small {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #ddd #d9d9d9 #bdbdbd;
+    border-image: none;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    height: 2.5em;
+    width: 2.5em;
+}
+.captcha-container .captcha-inputs .refresh, .captcha-container .captcha-inputs .audio {
+    float: left;
+    margin: 5px 0 0 7px;
+    padding: 0;
+}
+.captcha-container .captcha-inputs .refresh a, .captcha-container .captcha-inputs .audio a {
+    background: url("https://www.paypalobjects.com/webstatic/mktg/consumer/onboarding/ui-sprite.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    padding: 15px;
+}
+.captcha-container .captcha-inputs .audio a {
+    background-position: -32px -3489px;
+}
+.captcha-container .captcha-inputs .refresh a {
+    background-position: -33px -3389px;
+}
+.captcha-container .imageLink:focus {
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #666;
+}
+.captcha-container .light, .captcha-container .light:link, .captcha-container .light:visited {
+    background: -moz-linear-gradient(center bottom , #dedede 0px, #dedede 20%, #f5f5f5 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #ddd #d9d9d9 #bdbdbd;
+    box-shadow: 0 1px #fff inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+    color: #333;
+    text-shadow: 0 1px #efefef;
+}
+.captcha-container .light:hover {
+    background: -moz-linear-gradient(center bottom , #d1d1d1 0px, #d1d1d1 20%, #ebebeb 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 1px #f5f5f5 inset, 0 1px rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+.captcha-container .light:active {
+    background: -moz-linear-gradient(center bottom , #d1d1d1 0px, #d1d1d1 20%, #dedede 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-color: #c2c2c2 #bcbcbc #adadad;
+    box-shadow: 0 2px 4px #999 inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+.no-js .captcha-container .captcha-inputs .refresh, .no-js .captcha-container .captcha-inputs .audio {
+    margin: 45px 0 0 7px;
+}
+@media screen and (max-width: 440px) {
+.desktop .captcha-container .captcha-inputs .textInput.medium {
+    width: 72%;
+}
+}
+.ui-front {
+    z-index: 100;
+}
+.ui-widget, .ui-widget button {
+    font-family: inherit;
+    font-size: inherit;
+}
+.ui-dialog {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 4px;
+    opacity: 1;
+    overflow: hidden;
+    position: fixed;
+    transition: opacity 0.2s linear 0s;
+}
+.ui-dialog .btn {
+    box-sizing: border-box;
+    margin-left: 0;
+    width: 100%;
+}
+.ui-dialog .btn .btn {
+    margin-left: 10px;
+}
+.ui-dialog .ui-dialog-titlebar {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    font-size: 18px;
+    letter-spacing: 0.01em;
+    min-height: 20px;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+.ui-dialog .ui-dialog-title {
+    line-height: 22px;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+    border-radius: 0;
+    height: 25px;
+    padding: 1px;
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 25px;
+}
+.ui-dialog .ui-button::after {
+    background: url("https://www.paypalobjects.com/webstatic/mktg/2014design/close_default.png") no-repeat scroll center center transparent;
+    content: "";
+    height: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25px;
+}
+.ui-dialog .ui-dialog-content {
+    padding: 0.5em 1.5em;
+}
+.ui-dialog .content {
+    padding: 0;
+}
+.ui-dialog.start {
+    opacity: 0;
+}
+.ui-widget-overlay {
+    background: none repeat scroll 0 0 #000;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.ui-button {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    min-width: 0;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+}
+.ui-dialog .ui-button, .ui-dialog-content .btn {
+}
+footer, .footer {
+    clear: both;
+    color: #f5f5f5;
+    font-size: 12px;
+    height: 60px;
+    margin-bottom: 0;
+    padding-top: 20px;
+    position: absolute;
+    text-align: center;
+}
+footer a, .footer a, footer a:link, .footer a:link, footer a:visited, .footer a:visited {
+    color: #6c7378;
+}
+footer ul, .footer ul {
+    list-style-type: none;
+    margin: 0.7em 0;
+}
+footer ul li, .footer ul li {
+    border-right: 1px solid #6c7378;
+    display: inline-block;
+    margin: 0;
+    padding-left: 0.4em;
+}
+footer ul li:first-child, .footer ul li:first-child {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+footer ul li:last-child, .footer ul li:last-child {
+    border-right: 0 none;
+}
+footer ul li a, .footer ul li a {
+    margin-right: 0.5em;
+    white-space: nowrap;
+}
+footer ul li a:hover, .footer ul li a:hover {
+    color: #444;
+}
+.legal {
+    color: #6c7378;
+    font-size: 12px;
+    margin: 20px 0 0;
+    padding: 0 0 0 0.4em;
+}
+@media screen and (max-width: 767px) {
+footer, .footer {
+    margin: 15px;
+    padding: 0;
+    width: auto;
+}
+footer ul + ul, .footer ul + ul {
+    display: none;
+}
+}
+.checkboxContainer {
+    display: table;
+    position: relative;
+}
+.checkboxInput {
+    display: table-cell;
+    height: 21px;
+    width: 21px;
+}
+.checkboxLabel {
+    display: table-cell;
+    padding-left: 7px;
+    vertical-align: middle;
+}
+.checkboxLabel::before {
+    background: url("https://www.paypalobjects.com/webstatic/checkout/hermes/flat/sprite_forms_v2_2x.png") repeat scroll -9px 0 / 40px auto rgba(0, 0, 0, 0);
+    content: "";
+    height: 26px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 26px;
+}
+.checkboxInput:checked + .checkboxLabel::before {
+    background-position: -9px -400px;
+}
+.checkboxInput:focus + .checkboxLabel::before {
+    background-position: -9px -200px;
+}
+.checkboxInput:checked:focus + .checkboxLabel::before {
+    background-position: -9px -400px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px 1px #666;
+}
+.checkboxMoreInfo {
+    display: table-cell;
+    vertical-align: top;
+}
+.maskable {
+    position: relative;
+}
+.keepMeLogin {
+    margin-bottom: 15px;
+}
+.keepMeLoginAbout {
+    background: url("https://www.paypalobjects.com/webstatic/checkout/hermes/flat/hermes_window_sprite_v6_2x.png") repeat scroll -164px -1px / 250px auto rgba(0, 0, 0, 0);
+    direction: ltr;
+    display: inline-block;
+    height: 18px;
+    margin: 4px 1px 0 10px;
+    position: relative;
+    text-indent: -999em;
+    width: 19px;
+}
+.keepMeLoginAbout:focus {
+    border-radius: 18px;
+}
+.keepMeLoginTerms {
+    background: none repeat scroll 0 0 #50585a;
+    border-radius: 6px;
+    display: none;
+    font-size: 12px;
+    line-height: 17px;
+    overflow: auto;
+    padding: 15px;
+}
+.keepMeLoginTerms.show {
+    bottom: 10px;
+    display: block;
+    left: 8%;
+    position: absolute;
+    right: 8%;
+    top: 10px;
+    z-index: 102;
+}
+.keepMeLoginTerms *:last-of-type {
+    margin-bottom: 0;
+}
+.keepMeLoginTerms * {
+    color: #fff;
+}
+.keepMeLoginAboutBtn {
+    background: url("https://www.paypalobjects.com/images/shared/icon_close_darkbg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 0 none;
+    cursor: pointer;
+    direction: ltr;
+    height: 20px;
+    position: absolute;
+    right: 10px;
+    text-indent: -9999em;
+    top: 10px;
+    width: 20px;
+}
+.keepMeLoginAboutBtn:focus {
+    background-color: transparent;
+    box-shadow: 0 0 1px 1px #fff;
+    outline: 0 none;
+}
+.aboutKeepMeLoggedIn {
+    font-size: 15px;
+    font-weight: 700;
+}
+.no-js .keepMeLoginTerms {
+    display: block;
+}
+.phonePresent::after {
+    background: none repeat scroll 0 0 #cbd2d6;
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 30px 0;
+    width: 100%;
+}
+.phonePresentNoSibling::after {
+    display: none;
+}
+.forgotLink {
+    border-bottom: 1px solid #cbd2d6;
+    margin: 25px auto 30px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+.forgotLinkNoSibling {
+    border-bottom: 0 none;
+    font-size: 0.866667em;
+    margin-bottom: 9px;
+    margin-top: 14px;
+    padding-bottom: 0;
+}
+input[name="login_pin"] {
+}
+@media all and (max-width: 767px) {
+.forgotLinkNoSibling {
+    margin: 16px auto 19px;
+    padding-bottom: 19px;
+}
+.keepMeLoginTerms {
+    font-size: 12px;
+}
+.btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled.focus, .btn-default.focus[disabled], fieldset[disabled] .btn-default.focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default.active[disabled], fieldset[disabled] .btn-default.active {
+    background-color: #fff;
+    border-color: #ccc;
+}
+.btn-default .badge {
+    background-color: #333;
+    color: #fff;
+}
+.btn-primary {
+    background-color: #bed370;
+    border-color: #2e6da4;
+    color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-color: #286090;
+    border-color: #204d74;
+    color: #fff;
+}
+.btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+.btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled.focus, .btn-primary.focus[disabled], fieldset[disabled] .btn-primary.focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary.active[disabled], fieldset[disabled] .btn-primary.active {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+.btn-primary .badge {
+    background-color: #fff;
+    color: #337ab7;
+}
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    color: #fff;
+}
+.btn-success:hover, .btn-success:focus, .btn-success.focus, .btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    background-color: #449d44;
+    border-color: #398439;
+    color: #fff;
+}
+.btn-success:active, .btn-success.active, .open > .dropdown-toggle.btn-success {
+    background-image: none;
+}
+.btn-success.disabled, .btn-success[disabled], fieldset[disabled] .btn-success, .btn-success.disabled:hover, .btn-success[disabled]:hover, fieldset[disabled] .btn-success:hover, .btn-success.disabled:focus, .btn-success[disabled]:focus, fieldset[disabled] .btn-success:focus, .btn-success.disabled.focus, .btn-success.focus[disabled], fieldset[disabled] .btn-success.focus, .btn-success.disabled:active, .btn-success[disabled]:active, fieldset[disabled] .btn-success:active, .btn-success.disabled.active, .btn-success.active[disabled], fieldset[disabled] .btn-success.active {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+.btn-success .badge {
+    background-color: #fff;
+    color: #5cb85c;
+}
+.btn-info {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    color: #fff;
+}
+.btn-info:hover, .btn-info:focus, .btn-info.focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+    background-color: #31b0d5;
+    border-color: #269abc;
+    color: #fff;
+}
+
+label.xyz {
+display: block;
+padding-left: 15px;
+text-indent: -15px;
+}
+input {
+width: 13px;
+height: 13px;
+padding: 0;
+margin:0;
+vertical-align: bottom;
+position: relative;
+top: -1px;
+*overflow: hidden;
+}
+}

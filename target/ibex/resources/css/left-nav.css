@@ -1,0 +1,9 @@
+@charset "UTF-8";
+  }
+  
+  #sidebar.affix {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }/* CSS Document */
+

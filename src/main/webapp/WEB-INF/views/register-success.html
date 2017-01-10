@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Quisk</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<link href="../../../resources/images/favicon.ico" rel="icon" media="screen" th:href="@{/resources/images/favicon.ico}"/>
+   <link href="../../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen" th:href="@{/resources/css/bootstrap.min.css}"/>
+   <link href="../../../resources/css/ibex-styles.css" rel="stylesheet" media="screen" th:href="@{/resources/css/ibex-styles.css}"/>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 quiskloginconent">
+                         <div class="col-md-6 left">
+                                <div align="center" class="quisk">
+                                    <img src="/ibex/resources/images/Quisk-inida-brand-image.png" class="img-responsive"/>
+                                </div>
+                            </div>
+                        <div class="col-md-6">
+                            <div align="center">
+                                    <img src="/ibex/resources/images/Quisk-inida-logo.png" class="img-responsive"/>
+                                </div>
+
+                                <div class="qusik-login-form">
+                                        <div class="form-area">  
+                                            <form role="form">
+                                                    <div class="thanksform-inner">
+                                                        <span>Thank you for registering.</span> <br/>An SMS with Temporary Pin has been sent to your registered mobile number. <br/>Please login to active your account.
+                                                    </div>
+                                                     
+                                              <input type="hidden"  id="cpurl" th:value="#{register.account.for.redirect.cp}" />
+                                            <button type="button" id="timer" name="submit" class="myButton pull-right">Login</button>
+
+                                            </form>
+                                        </div>
+                                    </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+        </div>
+ 
+<!-- contact -->
+
+    <!-- Footer -->
+<script src="ibex/resources/js/jquery-latest.min.js" th:src="@{/resources/js/jquery-latest.min.js}"></script>
+<script src="ibex/resources/js/bootstrap.min.js" th:src="@{/resources/js/bootstrap.min.js}"></script> 
+
+<script src="ibex/resources/js/jquery-ui.min.js" th:src="@{/resources/js/jquery-ui.min.js}"></script>
+<script src="ibex/resources/js/register.js" th:src="@{/resources/js/register-success.js}"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<configuration scan="true">
+    <property file="${catalina.home}/conf/ibex/config.properties" />
+        <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+           <file>${catalina.base}/logs/ibex.log</file>
+           <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+           <!-- daily rollover -->
+               <fileNamePattern>${catalina.base}/logs/archive/ibex.%d{yyyy-MM-dd}.%i.gz</fileNamePattern>
+                <maxHistory>30</maxHistory>
+                  <timeBasedFileNamingAndTriggeringPolicy
+            class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+        <!-- or whenever the file size reaches 1KB -->
+        <maxFileSize>20MB</maxFileSize>
+      </timeBasedFileNamingAndTriggeringPolicy>
+            </rollingPolicy>
+           <encoder>
+                <pattern>%date - [%thread] - %-5level %logger{0} - %msg%n</pattern>
+           </encoder>
+        </appender>
+
+		<if condition='isDefined("GRAYLOG_HOST")'>
+			<then>
+				<appender name="GELF" class="me.moocar.logbackgelf.GelfAppender">
+					<facility>ibex</facility>
+					<graylog2ServerHost>${GRAYLOG_HOST}</graylog2ServerHost>
+					<graylog2ServerPort>12201</graylog2ServerPort>
+					<useLoggerName>true</useLoggerName>
+					<useThreadName>true</useThreadName>
+					<graylog2ServerVersion>0.11.0</graylog2ServerVersion>
+					<chunkThreshold>1000</chunkThreshold>
+					<messagePattern>%m%rEx</messagePattern>
+					<shortMessagePattern>%.-100(%m%rEx)</shortMessagePattern>
+					<additionalField>ipAddress:_ip_address</additionalField>
+					<additionalField>requestId:_request_id</additionalField>
+					<staticAdditionalField>_node_name:www013</staticAdditionalField>
+					<includeFullMDC>true</includeFullMDC>
+				</appender>
+			</then>
+		</if>
+	
+        <root level="${logger.level}">
+           <appender-ref ref="FILE" />
+
+			<if condition='isDefined("GRAYLOG_HOST")'>
+				<then>
+					<appender-ref ref="GELF" />
+				</then>
+			</if>
+        </root>
+</configuration>
