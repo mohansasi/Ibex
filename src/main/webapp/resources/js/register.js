@@ -43,7 +43,7 @@ $(document).ready(function (){
 			$("#errorMessage").html("Enter a valid Phone Number.");
 			return false;
 		}else if (phoneNumber != '' && isNumeric(phoneNumber)){
-			if(phoneNumber.length < 8 || phoneNumber.length > 10){
+			if(!(phoneNumber.length ==10)){
 				$("#errorMessage").html("Enter a valid Phone Number.");
 				return false;
 			}

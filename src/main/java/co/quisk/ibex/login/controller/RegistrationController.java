@@ -52,7 +52,8 @@ class RegistrationController {
 	@Value("${quisk.key}") private String quiskKey;
 	@Value("${generic.service.call.failed.msg}") private String genericServiceException;
 	@Value("${footer.year}") private String footerYear;
-	@Value("${generic.service.call.failed.msg}") private String failureMessage;
+	@Value("#{register.service.failed.msg}") private String failureMessage;
+	@Value("#{register.service.error.msg}") private String errorMessage;
 	
 	
 	/**
@@ -135,6 +136,9 @@ class RegistrationController {
 						errorResponse=(QuiskServiceError) RestClient.jsonToObject(responseJson, QuiskServiceError.class);
 						LOG.info("Json Error message {}",RestClient.jsonToObject(responseJson, QuiskServiceError.class));
 						model.addAttribute("SuccessMessage", errorResponse.getErrorMessage());
+						if (errorResponse.getErrorMessage().equals(failureMessage)) {
+							model.addAttribute("SuccessMessage", errorMessage);
+						}
 						return "register";
 					}
 					else{
@@ -151,7 +155,7 @@ class RegistrationController {
     	} catch (Exception e) {
 			LOG.error("Exception in register : {}",
 					e.getMessage());
-			throw new QuiskApplicationException(failureMessage);
+			throw new QuiskApplicationException(genericServiceException);
 		}
 
         return "register-success";
