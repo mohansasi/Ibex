@@ -111,5 +111,17 @@ public class HomePageController {
 			}
 		return "redirect:/login";
 	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.POST)
+	String test(Model model,
+			@ModelAttribute("adminUserData") AdminUserData adminUserData,
+			SessionStatus status) throws QuiskApplicationException {
+		LOG.info("Entered logout method handler.");
+			if(adminUserData!=null){
+				status.setComplete();
+			}
+		return "redirect:/login";
+	}
+	
 
 }
